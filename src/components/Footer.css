@@ -1,0 +1,63 @@
+.footer {
+  background-color: #f5f5f5;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.social-links {
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #2ea44f;
+}
+
+.social-links svg {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.company-info {
+  color: #666;
+  line-height: 1.6;
+}
+
+.company-info p {
+  margin: 0.5rem 0;
+}
+
+.address {
+  font-style: normal;
+}
+
+.copyright {
+  margin-top: 1rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 0 1rem;
+  }
+  
+  .social-links a {
+    display: block;
+    margin: 1rem 0;
+  }
+} 
