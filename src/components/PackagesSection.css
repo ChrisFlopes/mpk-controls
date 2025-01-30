@@ -29,14 +29,12 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  height: 450px;
 }
 
 .preview-image {
   width: 100%;
   aspect-ratio: 1;
   background: #e0e0e0;
-  border-radius: 4px;
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
