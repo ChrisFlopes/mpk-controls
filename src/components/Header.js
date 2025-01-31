@@ -19,7 +19,7 @@ function Header() {
           <Link to="/services" onClick={scrollToTop}>Services</Link>
           <Link to="/packages" onClick={scrollToTop}>Packages</Link>
         </nav>
-        <button className="contact-button">CONTACT US</button>
+        <Link to="/contact" className="contact-button">CONTACT US</Link>
       </div>
     </header>
   );

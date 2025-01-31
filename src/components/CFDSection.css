@@ -1,56 +1,51 @@
-.cfd-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
+.cfd-page {
+  padding: 4rem 0;
+  background: #f9f9f9;
 }
 
 .cfd-content {
-  padding-right: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.cfd-content h2 {
-  margin-bottom: 1.5rem;
+.cfd-section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cfd-text h2 {
+  font-size: 2.8rem;
   color: #333;
+  margin-bottom: 2rem;
 }
 
-.cfd-content p {
-  margin-bottom: 1.5rem;
+.cfd-text p {
   color: #666;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
-.cfd-content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.cfd-content li {
-  margin-bottom: 0.5rem;
-  color: #666;
-}
-
-.cfd-image {
+.cfd-video-container {
   width: 100%;
   aspect-ratio: 16/9;
-  background: #e0e0e0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-style: italic;
-  border-radius: 8px;
 }
 
-@media (max-width: 1024px) {
+.cfd-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
   .cfd-section {
     grid-template-columns: 1fr;
-  }
-  
-  .cfd-content {
-    padding-right: 0;
+    gap: 2rem;
   }
 } 

@@ -1,0 +1,155 @@
+.window-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+}
+
+.window-hero {
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.window-hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.window-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.window-content > p {
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.window-pricing {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.window-pricing p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.window-items {
+  display: grid;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.window-item {
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.window-item-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.window-item-text {
+  flex: 1;
+}
+
+.window-item-text h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.window-item-text p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.window-item-image {
+  flex: 1;
+  max-width: 300px;
+}
+
+.window-item-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-sheet-link {
+  display: inline-block;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.data-sheet-link:hover {
+  text-decoration: underline;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 40px;
+  border: 1px solid #333;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #f5f5f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .window-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .window-item-content {
+    flex-direction: column;
+  }
+
+  .window-item-image {
+    max-width: 100%;
+    margin-top: 1rem;
+    order: -1; /* Makes image appear above text on mobile */
+  }
+
+  .window-pricing {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .window-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .window-page {
+    padding: 1rem;
+  }
+
+  .window-item {
+    padding: 1rem;
+  }
+} 

@@ -11,48 +11,48 @@ function ProductsPage() {
   const products = [
     {
       title: 'AOV Smoke Vents',
-      image: defaultProductImage,
-      description: 'Smoke ventilation solutions for various applications'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/03/smoke-vents-services.jpg",
+      link: '/aov-smoke-vents'
     },
     {
       title: 'Mechanical AOV Systems',
-      image: defaultProductImage,
-      description: 'Advanced mechanical smoke ventilation systems'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/03/moav-extract-systems-services.jpg",
+      link: '/mechanical-aov-systems'
     },
     {
       title: 'AOV Dampers',
-      image: defaultProductImage,
-      description: 'Specialized damper solutions'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/03/smoke-shaft-dampers-services.jpg",
+      link: '/aov-dampers'
     },
     {
       title: 'Penthouse Louvers',
-      image: defaultProductImage,
-      description: 'High-quality ventilation louvers'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/03/penthouse-louvers-services.jpg",
+      link: '/penthouse-louvers'
     },
     {
       title: 'Fire Logic',
-      image: defaultProductImage,
-      description: 'Advanced fire detection and control systems'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/03/fire-logic-services.jpg",
+      link: '/fire-logic'
     },
     {
       title: 'MPKZ1 Single Zone',
-      image: defaultProductImage,
-      description: 'Single zone control solutions'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/Single-Zone-Control-Panel-ext-PKW1-products.jpg",
+      link: '/mpkz1-single-zone'
     },
     {
       title: 'MPKZM Multizone',
-      image: defaultProductImage,
-      description: 'Multi-zone control systems'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/Multi-zone-products.jpg",
+      link: '/mpkzm-multizone'
     },
     {
       title: 'Mechanical AOV Control Panel',
-      image: defaultProductImage,
-      description: 'Sophisticated control panel solutions'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/03/control-panels-services.jpg",
+      link: '/mechanical-aov-control-panel'
     },
     {
       title: 'Control Spares & Accessories',
-      image: defaultProductImage,
-      description: 'Essential components and accessories'
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/03/control-accessories-services.jpg",
+      link: '/control-spares-accessories'
     }
   ];
 
@@ -68,7 +68,7 @@ function ProductsPage() {
                 <img src={product.image} alt={product.title} />
                 <h3>{product.title}</h3>
                 <p>{product.description}</p>
-                <button className="more-info" onClick={() => navigate(`/products/${index}`)}>
+                <button className="more-info" onClick={() => navigate(product.link)}>
                   More Information
                 </button>
               </div>

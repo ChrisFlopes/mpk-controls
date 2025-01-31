@@ -1,0 +1,89 @@
+.spares-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+}
+
+.spares-hero {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.spares-hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.spares-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.spares-item {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spares-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spares-image {
+  margin-bottom: 1rem;
+}
+
+.spares-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.spares-item h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 1px solid #333;
+  border-radius: 25px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.contact-button:hover {
+  background: #f5f5f5;
+}
+
+@media (max-width: 992px) {
+  .spares-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .spares-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spares-hero h1 {
+    font-size: 2rem;
+  }
+} 

@@ -1,0 +1,102 @@
+.mechanical-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+}
+
+.mechanical-hero {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.mechanical-hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.mechanical-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.mechanical-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.mechanical-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mechanical-description p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-section {
+  margin-top: 2rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 1px solid #333;
+  border-radius: 25px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact-button:hover {
+  background: #f5f5f5;
+}
+
+/* Carousel styles */
+.carousel .control-prev.control-arrow:before {
+  border-right-color: rgba(0, 0, 0, 0.6) !important;
+  border-width: 15px 15px 15px 0 !important;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left-color: rgba(0, 0, 0, 0.6) !important;
+  border-width: 15px 0 15px 15px !important;
+}
+
+.carousel .carousel-status,
+.carousel .overlay,
+.carousel .overlay-content,
+.carousel .slide::after,
+.carousel .slide::before,
+.carousel::after,
+.carousel::before,
+.mechanical-image::after,
+.mechanical-image::before {
+  display: none !important;
+  content: none !important;
+}
+
+@media (max-width: 768px) {
+  .mechanical-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mechanical-hero {
+    padding: 2rem 0;
+  }
+
+  .mechanical-hero h1 {
+    font-size: 2rem;
+  }
+}

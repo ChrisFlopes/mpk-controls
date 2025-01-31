@@ -1,0 +1,127 @@
+.mpkz1-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+}
+
+.mpkz1-hero {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.mpkz1-hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.mpkz1-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mpkz1-intro {
+  margin-bottom: 3rem;
+}
+
+.mpkz1-intro p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.mpkz1-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.mpkz1-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.technical-data {
+  margin: 3rem 0;
+}
+
+.technical-data h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.data-section {
+  margin-bottom: 2rem;
+}
+
+.data-section h3 {
+  color: #444;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.data-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.data-section li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.data-section li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 40px;
+  border: 1px solid #333;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  .mpkz1-hero h1 {
+    font-size: 2rem;
+  }
+
+  .technical-data h2 {
+    font-size: 1.6rem;
+  }
+
+  .data-section h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mpkz1-page {
+    padding: 1rem;
+  }
+} 

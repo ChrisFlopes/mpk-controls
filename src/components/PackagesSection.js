@@ -6,19 +6,23 @@ function PackagesSection() {
   const packages = [
     {
       title: "MPK PRO Vent Staircase Packages",
-      description: "Complete staircase ventilation solutions",
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/Prolight-Acsess-Hatch-1.jpg",
+      link: "/mpk-pro-vent-staircase-packages"
     },
     {
       title: "MPK PRO Vent Lobby Packages",
-      description: "Comprehensive lobby ventilation systems",
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/Prolight-Acsess-2-open-front-view.jpg",
+      link: "/mpk-pro-vent-lobby-packages"
     },
     {
       title: "MPK OSO Window Packages",
-      description: "Specialized window ventilation solutions",
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/MCR-OSO-window-3.jpg",
+      link: "/mpk-oso-window-packages"
     },
     {
       title: "MPK LAM Louver Staircase Packages",
-      description: "Advanced louver systems for staircases",
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/Mcr-LAM-Louver-Open.jpg",
+      link: "/mpk-lam-louver-staircase-packages"
     }
   ];
 
@@ -27,20 +31,29 @@ function PackagesSection() {
   };
 
   return (
-    <section className="packages-section">
-      <h2>Our Packages</h2>
-      <p className="section-description">Below you will see the wide range of packages we can supply, don't forget to contact us for a free quote on any of the packages!</p>
-      <div className="preview-grid">
-        {packages.map((pkg, index) => (
-          <div key={index} className="preview-card">
-            <div className="preview-image">Package Image</div>
-            <h3>{pkg.title}</h3>
-            <p>{pkg.description}</p>
-            <Link to="/packages" className="more-info-button">More Information</Link>
-          </div>
-        ))}
+    <section className="package-section">
+      <div className="package-container">
+        <div className="package-title">
+          <h2>Packages</h2>
+        </div>
+        <div className="package-grid">
+          {packages.map((pkg, index) => (
+            <Link to={pkg.link} key={index} className="package-card">
+              <div className="package-image">
+                <img src={pkg.image} alt={pkg.title} />
+              </div>
+              <div className="package-content">
+                <h3>{pkg.title}</h3>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="package-button-container">
+          <Link to="/packages" className="package-view-all" onClick={scrollToTop}>
+            View All Packages
+          </Link>
+        </div>
       </div>
-      <Link to="/packages" className="view-all-button" onClick={scrollToTop}>View All Packages</Link>
     </section>
   );
 }

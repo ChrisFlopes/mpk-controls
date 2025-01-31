@@ -11,23 +11,19 @@ function PackagesPage() {
   const packages = [
     {
       title: "MPK PRO Vent Staircase Packages",
-      description: "Our staircase ventilation packages provide comprehensive smoke control solutions for multi-story buildings. These systems ensure safe evacuation routes and assist firefighting operations.",
-      image: null // We'll add the image path once available
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/Prolight-Acsess-Hatch-1.jpg" // We'll add the image path once available
     },
     {
       title: "MPK PRO Vent Lobby Packages",
-      description: "Designed specifically for lobby areas, these packages offer complete smoke ventilation solutions that protect critical access points and common areas in your building.",
-      image: null
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/Prolight-Acsess-2-open-front-view.jpg"
     },
     {
       title: "MPK OSO Window Packages",
-      description: "Our window ventilation packages provide natural smoke ventilation through strategically placed window systems, offering both safety and energy efficiency.",
-      image: null
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/MCR-OSO-window-3.jpg"
     },
     {
       title: "MPK LAM Louver Staircase Packages",
-      description: "Advanced louver systems specifically designed for staircases, providing controlled ventilation and smoke extraction when needed most.",
-      image: null
+      image: "https://mpkcontrols.co.uk/wp-content/uploads/2021/04/Mcr-LAM-Louver-Open.jpg"
     }
   ];
 
