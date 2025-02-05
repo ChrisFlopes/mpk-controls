@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mpk-controls/static/css/main.7c01a6c9.css",
+    "main.js": "/mpk-controls/static/js/main.59607fa5.js",
+    "static/js/488.9b6dc36e.chunk.js": "/mpk-controls/static/js/488.9b6dc36e.chunk.js",
+    "static/media/home-hero-banner.JPEG": "/mpk-controls/static/media/home-hero-banner.9684bba0a1a1b3e51adb.JPEG",
+    "static/media/default-product-image.jpg": "/mpk-controls/static/media/default-product-image.96aff5c07ebf8bd692dd.jpg",
+    "static/media/MPK_Controls_Logo-1.png": "/mpk-controls/static/media/MPK_Controls_Logo-1.4e45648c81280fe6755b.png",
+    "index.html": "/mpk-controls/index.html",
+    "main.7c01a6c9.css.map": "/mpk-controls/static/css/main.7c01a6c9.css.map",
+    "main.59607fa5.js.map": "/mpk-controls/static/js/main.59607fa5.js.map",
+    "488.9b6dc36e.chunk.js.map": "/mpk-controls/static/js/488.9b6dc36e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c01a6c9.css",
+    "static/js/main.59607fa5.js"
+  ]
+}
